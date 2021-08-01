@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    //Aqui esta el cambio porfa borrar
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
   
