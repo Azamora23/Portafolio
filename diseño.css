@@ -1,0 +1,35 @@
+:root
+{
+    --color1: #A6384C;
+    --color2: #F29188;
+    --color3: #F2D750;
+    --color4: #D9695F;
+}
+.navbar-menu{
+    background-color: var(--color3);
+}
+.navbar-menu .navbar-item{
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-menu .navbar-item:hover{
+    color: white;
+    background-color: var(--color1);
+}
+
+.hero{
+    background-color: var(--color1);
+    border-bottom-right-radius: 30%;
+  
+}
+
+.hero-body .title, .hero-body .subtitle{
+    color: white;
+}
+
+#dibujo
+{
+    padding: 1rem;
+}
+
