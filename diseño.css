@@ -13,8 +13,11 @@
     --colorgris: #F2F2F2;
 }
 /*navegador*/
-.navbar-menu{
+#navegador{
     background-color: var(--color3);
+}
+#navegador-burger{
+    color: white;
 }
 .navbar-menu .navbar-item{
     color: white;
@@ -157,7 +160,14 @@
     background-color: var(--color3);
     padding: 0.5rem;
 }
-
+/*tamaño de pantalla*/
+@media only screen and (max-width: 1023px) {
+    #navbarBasicExample{
+        background-color: var(--color3);
+        text-align: center;
+    }
+    
+}   
 
 
 
