@@ -1,10 +1,18 @@
+*{
+    font-family: roboto, sans-serif;
+}
+
+/*barra de colores*/
 :root
 {
     --color1: #A6384C;
     --color2: #F29188;
     --color3: #F2D750;
     --color4: #D9695F;
+    --color5: #4a4a4a;
+    --colorgris: #F2F2F2;
 }
+/*navegador*/
 .navbar-menu{
     background-color: var(--color3);
 }
@@ -17,19 +25,142 @@
     color: white;
     background-color: var(--color1);
 }
-
+/*principal*/
 .hero{
     background-color: var(--color1);
     border-bottom-right-radius: 30%;
   
 }
-
 .hero-body .title, .hero-body .subtitle{
     color: white;
+    padding: 0rem;
 }
 
+/*dibujo*/
 #dibujo
 {
     padding: 1rem;
 }
+/*titulo segmentos*/
+#section .title, #habilidades .title, #contacto .title{
+    padding: 0rem 3rem;
+}
+/*animación titulo y subtitulo*/
+#nombre{
+    animation: deslizar 3s ease-in-out;
+}    
+@keyframes deslizar{
+    0%{
+        transform: translateY(-50px);
+        color: var(--color1);
+    }
+    100%{
+        transform: translateY(0px);
+        color: white;
+    }
+}
+#carrera{
+    animation: deslizarc 3s ease-in-out;
+}
+@keyframes deslizarc{
+    0%{
+        transform: translateY(50px);
+        color: var(--color1);
+    }
+    100%{
+        transform: translateY(0px);
+        color: white;
+    }
+}
+/*foto*/
+#foto{
+    margin: auto;
+    padding-top: 3rem;
+}
+/*parrafo conoceme*/
+.subtitle{
+    padding-top: 3rem;
+}
+/*fondo section*/
+#section, #contacto{
+    padding: 2rem 1.5rem;
+}
+/*columnas de section*/
+.section .columns{
+    background-color: var(--colorgris);
+    margin: 0rem 3rem;
+}
+/*Pasatiempos hover*/
+.column{
+   position: relative;
+}
+.column > .contenido p{
+    position: absolute;
+    text-align: center;
+    padding: 2rem;
+    color: var(--color5);
+}
+.imagen:hover{
+    opacity: 0.30;
+}
+/*habilidades técnicas*/
+#habilidades .image{
+    margin: auto;
+}
+#habilidades .column{
+    padding: 3rem 1rem;
+    background-color: white;
+}
+#habilidades p{
+    text-align: center;
+    font-weight: bold;
+}
+/*movimiento habilidades*/
+#habilidades .image:hover{
+    animation: rotar 8s infinite linear;
+}
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+/*contacto*/
+#contacto .columns{
+    border-radius: 0.5rem;
+}
+#contacto .columns{
+    background-color: var(--color1);
+}
+/*movimiento contacto*/
+@keyframes movimiento{
+    0% {
+        transform: translate(100%);
+        opacity: 0.30;
+    }
+}
+#contacto .label{
+    color: white;
+}
+#contacto .input:active, #contacto .input:focus, #contacto .textarea:focus, #contacto .textarea:active{
+    border-color: var(--color5);
+    box-shadow: none;
+}
+.button:hover{
+    background-color: var(--color3);
+    font-weight: bold;
+}
+/*footer*/
+#footer{
+    background-color: var(--color3);
+    padding: 0.5rem;
+}
+
+
+
+
+
+
 
