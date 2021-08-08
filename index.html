@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="diseño.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Portafolio</title>
 </head>
 <body>
+  <!--navegador-->
+  <a name="inicio"></a>
     <nav class="navbar is-shadow" role="navigation" aria-label="main navigation">
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
@@ -17,21 +22,22 @@
         </a>
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item">
+            <a class="navbar-item" href="#inicio">
               Inicio
             </a>
-            <a class="navbar-item">
-              Conocéme
+            <a class="navbar-item" href="#conoceme">
+              Conóceme
             </a>
-            <a class="navbar-item">
+            <a class="navbar-item" href="#habilidades">
               Habilidades
             </a>
-            <a class="navbar-item">
+            <a class="navbar-item" href="#contacto">
               Contacto
             </a>
           </div>
         </div>
     </nav>
+    <!--section-->
     <section class="hero is-medium">
         <div class="columns"> 
             <div class="column">
@@ -39,33 +45,173 @@
             </div>
             <div class="column is-three-fifths">   
                 <div class="hero-body">
-                    <h1 class="title">
+                    <h1 class="title" id="nombre">
                         Andrea Zamora Robayo
                     </h1>
-                    <h2 class="subtitle">
+                    <h2 class="subtitle" id="carrera">
                         Desarrolladora Front End
                     </h2>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section is-medium">
+    <!--conóceme-->
+    <a name="conoceme"></a>
+    <section class="section is-medium" id="section"> 
+      <h1 class="title">Un poco de mi</h1>
+        <div class="columns">
+          <div class="column">
+            <figure class="image is-128x128" id="foto">
+              <img class="is-rounded" src="imagenes/Foto.png" alt="Foto de Andrea Zamora">
+            </figure>
+          </div>
+          <div class="column is-three-fifths">
+            <p class="subtitle">
+              Soy una chica apasionada por el mundo del <strong>Front End</strong>, interactuar con CSS y JavaScript me llevan a un nivel de creatividad e innovación  que hace algún tiempo no creí posible hacer. <br>
+              El mundo del desarrollo me ha mostrado que todo lo que imaginas puede ser posible, solo se necesitan de dos cosas, constancia y aprendizaje continuo. <br> <br>
+              <strong>¡Vamos por más aprendizajes y experiencias​!.</strong>
+            </p>
+          </div>
+        </div>
+        <!--pasatiempos-->
+        <div class="columns">
+          <div class="column">
+            <div class="contenido">
+              <p>​<strong>​Amo conocer culturas y lugares diferentes.</strong></p>
+            </div>
+            <figure class="image is-3by2">
+              <img class="imagen" src="imagenes/viajes1.png">
+            </figure>
+          </div>
+          <div class="column">
+            <div class="contenido">
+              <p>​<strong>​Con la pandemia empece a apasionarme por el deporte, me siento vital y llena de energía.</strong></p>
+            </div>
+            <figure class="image is-3by2">
+              <img class="imagen" src="imagenes/deporte.png">
+            </figure>
+          </div>
+          <div class="column">
+            <div class="contenido">
+              <p>​<strong>​​A lo largo de mi vida el aprendizaje constante ha sido parte de mi vida, me encanta aprender cosas nuevas que me reten.</strong></p>
+            </div>
+            <figure class="image is-3by2">
+              <img class="imagen" src="imagenes/aprender.png">
+            </figure>
+          </div>
+          <div class="column">
+            <div class="contenido">
+              <p>​<strong>​​​Con los deportes extremos me siento viva.</strong></p>
+            </div>
+            <figure class="image is-3by2">
+              <img class="imagen" src="imagenes/extremo.png">
+            </figure> 
+          </div>
+        </div>
+    </section>
+    <!--Habilidades-->
+    <a name="habilidades"></a>
+    <section class="section" id="habilidades">
+      <h1 class="title">Habilidades Técnicas</h1>
       <div class="columns">
         <div class="column">
-          <figure class="image is-128x128">
-            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+          <figure class="image is-128x128" onmouseover="grande(this)" onmouseout="normal(this)">
+            <img src="imagenes/html1.png" alt="Logo HTML"/>
           </figure>
+          <p class="texto">HTML</p>
         </div>
-        <div class="column is-three-fifths">
-          <h1 class="title">Section</h1>
-          <h2 class="subtitle">
-            A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
-          </h2>
+        <div class="column">
+          <figure class="image is-128x128" onmouseover="grande(this)" onmouseout="normal(this)">
+            <img src="imagenes/css2.png" alt="Logo CSS">
+          </figure>
+          <p class="texto">CSS</p>
+        </div>
+        <div class="column">
+          <figure class="image is-128x128" onmouseover="grande(this)" onmouseout="normal(this)">
+            <img src="imagenes/javascript.png" alt="Logo JavaScript" />
+          </figure>
+          <p class="texto">JAVASCRIPT</p>
+        </div>
+        <div class="column">
+          <figure class="image is-128x128" onmouseover="grande(this)" onmouseout="normal(this)">
+            <img src="imagenes/git.png" alt="Logo Git">
+          </figure> 
+          <p class="texto">GIT</p>
         </div>
       </div>
-      
     </section>
-
+    <!--contacto-->
+    <a name="contacto"></a>
+    <section class="section is-medium" id="contacto">
+      <h1 class="title">Contacto</h1>
+        <div class="columns">
+          <div class="column is-three-fifths is-offset-one-fifth">  
+            <div class="field">
+              <label class="label">Nombre</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input" type="text" placeholder="Ej: Andrea Zamora">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input" type="email" placeholder="Ej: azamora1111@gmail.com">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+            <div class="mensaje">
+              <label class="label">Mensaje</label>
+              <textarea class="textarea" placeholder="Ej: Hola Andrea"></textarea>
+            </div>
+            <br>
+            <div class="field is-grouped is-grouped-centered">
+              <p class="control">
+                <a class="button">
+                  Enviar
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>  
+    </section>
+    <!--footer-->
+    <footer class="footer" id="footer">
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://www.linkedin.com/in/andreazamora23/" target="_blanck">
+            <span class="icon is-large">
+              <i class="fab fa-linkedin fa-3x" style="color: #4a4a4a"></i>
+            </span>
+            </a>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="mailto:azamora1111@gmail.com"target="_blanck">
+              <span class="icon is-large">
+                <i class="fas fa-envelope-square fa-3x" style="color: #4a4a4a"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a href="https://github.com/Azamora23/Portafolio">
+              <span class="icon is-large">
+                <i class="fab fa-github-square fa-3x" style="color: #4a4a4a"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </footer>
     <script src="interactivo.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </body>
 </html>
