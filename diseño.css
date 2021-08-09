@@ -157,6 +157,11 @@
     background-color: var(--color3);
     font-weight: bold;
 }
+/*estilo alert*/
+.swal2-icon.swal2-success{
+    color: var(--color1) !important;
+    border-color: var(--color1) !important;
+}
 /*footer*/
 #footer{
     background-color: var(--color3);

@@ -82,6 +82,6 @@ window.addEventListener("scroll", function(){
     animacion.style.animation = "movimiento 3s ease-in-out";
   }
 })
-
+//diseño alerta
 
 
