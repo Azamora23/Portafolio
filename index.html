@@ -14,8 +14,8 @@
 <body>
   <!--navegador-->
   <a name="inicio"></a>
-    <nav class="navbar is-shadow" role="navigation" aria-label="main navigation">
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <nav class="navbar is-shadow"  id="navegador" role="navigation" aria-label="main navigation">
+        <a role="button" class="navbar-burger" id="navegador-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -38,12 +38,12 @@
         </div>
     </nav>
     <!--section-->
-    <section class="hero is-medium">
+    <section class="hero is-medium" id="header">
         <div class="columns"> 
-            <div class="column">
+            <div class="column" id="espacioDibujo">
              <canvas id="dibujo" width="340" height="340"></canvas> 
             </div>
-            <div class="column is-three-fifths">   
+            <div class="column is-three-fifths" id="titulos">   
                 <div class="hero-body">
                     <h1 class="title" id="nombre">
                         Andrea Zamora Robayo
@@ -78,14 +78,15 @@
           <div class="column">
             <div class="contenido">
               <p>​<strong>​Amo conocer culturas y lugares diferentes.</strong></p>
+            
+              <figure class="image is-3by2">
+                <img class="imagen" src="imagenes/viajes1.png">
+              </figure>
             </div>
-            <figure class="image is-3by2">
-              <img class="imagen" src="imagenes/viajes1.png">
-            </figure>
           </div>
           <div class="column">
             <div class="contenido">
-              <p>​<strong>​Con la pandemia empece a apasionarme por el deporte, me siento vital y llena de energía.</strong></p>
+              <p>​<strong>​Con el deporte me siento vital y llena de energía.</strong></p>
             </div>
             <figure class="image is-3by2">
               <img class="imagen" src="imagenes/deporte.png">
@@ -93,7 +94,7 @@
           </div>
           <div class="column">
             <div class="contenido">
-              <p>​<strong>​​A lo largo de mi vida el aprendizaje constante ha sido parte de mi vida, me encanta aprender cosas nuevas que me reten.</strong></p>
+              <p>​<strong>​​El aprendizaje me abre la mente a nuevas ideas.</strong></p>
             </div>
             <figure class="image is-3by2">
               <img class="imagen" src="imagenes/aprender.png">
@@ -145,7 +146,7 @@
     <section class="section is-medium" id="contacto">
       <h1 class="title">Contacto</h1>
         <div class="columns">
-          <div class="column is-three-fifths is-offset-one-fifth">  
+          <div class="column is-half is-offset-one-quarter">  
             <div class="field">
               <label class="label">Nombre</label>
               <div class="control has-icons-left has-icons-right">
@@ -186,7 +187,7 @@
           <div>
             <a href="https://www.linkedin.com/in/andreazamora23/" target="_blanck">
             <span class="icon is-large">
-              <i class="fab fa-linkedin fa-3x" style="color: #4a4a4a"></i>
+              <i class="fab fa-linkedin fa-2x" style="color: #4a4a4a"></i>
             </span>
             </a>
           </div>
@@ -195,16 +196,16 @@
           <div>
             <a href="mailto:azamora1111@gmail.com"target="_blanck">
               <span class="icon is-large">
-                <i class="fas fa-envelope-square fa-3x" style="color: #4a4a4a"></i>
+                <i class="fas fa-envelope-square fa-2x" style="color: #4a4a4a"></i>
               </span>
             </a>
           </div>
         </div>
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://github.com/Azamora23/Portafolio">
+            <a href="https://github.com/Azamora23/" target="_blanck">
               <span class="icon is-large">
-                <i class="fab fa-github-square fa-3x" style="color: #4a4a4a"></i>
+                <i class="fab fa-github-square fa-2x" style="color: #4a4a4a"></i>
               </span>
             </a>
           </div>
