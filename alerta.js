@@ -1,3 +1,6 @@
+var x = document.getElementById("boton");
+x.addEventListener("click", mensaje)
+
 function mensaje(){
     swal.fire({
       title: "Enviado",  
