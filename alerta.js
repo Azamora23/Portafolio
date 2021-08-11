@@ -6,7 +6,7 @@ function mensaje(){
       title: "Enviado",  
       text: "Gracias por tu mensaje, me estare comunicando pronto.",
       icon: "success",
-      width: "30%",
+      width: "50%",
       background: "#F2F2F2",
       timer: "5000",
       timerProgressBar: "true",
