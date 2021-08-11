@@ -75,13 +75,12 @@ function normal(g){
 window.addEventListener("scroll", function(){
   var animacion = document.getElementById("contacto");
   var posicion = animacion.getBoundingClientRect().top;
-  console.log(posicion);
   var tamañoPantalla = window.innerHeight/3;
 
   if(posicion < tamañoPantalla){
     animacion.style.animation = "movimiento 3s ease-in-out";
   }
 })
-//diseño alerta
+
 
 
