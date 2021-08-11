@@ -174,8 +174,28 @@
         background-color: var(--color3);
         text-align: center;
     }
-
-}   
+} 
+@media only screen and (max-width: 767px) {
+     #pasatiempos{
+        display: flex;
+    }
+    .contenido p{
+        position: relative;
+        padding: 0rem;
+        font-weight: lighter;
+        background-color: white;
+        margin-bottom: 1em;
+    }
+    #footer nav{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 655px){
+    #pasatiempos{
+        flex-direction: column;
+    }
+} 
 
 
 
