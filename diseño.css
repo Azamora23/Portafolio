@@ -176,15 +176,40 @@
     }
 } 
 @media only screen and (max-width: 767px) {
-     #pasatiempos{
+    /*posicion del titulo*/
+    #titulos, #titulos .hero-body{
+        padding: 0rem 1.5rem 1rem;
+        text-align: center;
+    }
+    /*cambio en la direccion de animacion*/
+    #carrera{
+        animation: deslizar 3s ease-in-out;
+    }    
+    @keyframes deslizar{
+    0%{
+        transform: translateY(-50px);
+        color: var(--color1);
+      }
+    100%{
+        transform: translateY(0px);
+        color: white;
+      }
+    }
+    /*padding de titulos*/
+    #section .title, #habilidades .title, #contacto .title{
+        padding: 0rem;
+    }
+    /*margin en columnas*/
+    .section .columns{
+        margin: 0rem;
+    }
+    /*visualizacon pasatiempo*/    
+    #pasatiempos{
         display: flex;
     }
     .contenido p{
-        position: relative;
         padding: 0rem;
         font-weight: lighter;
-        background-color: white;
-        margin-bottom: 1em;
     }
     #footer nav{
         display: flex;
