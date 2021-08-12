@@ -1,5 +1,5 @@
-var x = document.getElementById("boton");
-x.addEventListener("click", mensaje)
+/*var x = document.getElementById("enviar");
+x.addEventListener("click", mensaje);
 
 function mensaje(){
     swal.fire({
@@ -14,4 +14,4 @@ function mensaje(){
       stopKeydownPropagation: "true",
       confirmButtonColor: "#A6384C",
     })
-  };
+  }*/

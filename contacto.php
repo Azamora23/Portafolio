@@ -1,4 +1,4 @@
-<?php 
+<?php
 //variables
 $nombre = $_POST['nombre'];
 $email = $_POST['email']; 
@@ -13,5 +13,6 @@ $carta .= "Mensaje: $mensaje";
 
 //enviar mensaje
 mail($destinatario, $asunto, $carta);
-header('Location:index.html');
+header('Location:exito.html');
+
 ?>
