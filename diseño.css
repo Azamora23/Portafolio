@@ -50,7 +50,7 @@
     padding: 0rem 3rem;
 }
 /*animación titulo y subtitulo*/
-#nombre{
+#autora{
     animation: deslizar 3s ease-in-out;
 }    
 @keyframes deslizar{
@@ -140,6 +140,9 @@
     background-color: var(--color1);
     box-shadow: 2px 4px 8px 0 var(--color5);
 }
+#enviar{
+    margin-top: 1rem;
+}
 /*movimiento contacto*/
 @keyframes movimiento{
     0% {
@@ -170,11 +173,20 @@
     padding: 0.1rem;
     margin: 0rem;
 }
+.footer2{
+    display: flex;
+    justify-content: space-around;
+}    
 /*tamaño de pantalla*/
 @media only screen and (max-width: 1023px) {
     #navbarBasicExample{
         background-color: var(--color3);
         text-align: center;
+    }
+    @keyframes movimiento{
+        0% {
+            transform: none;
+        }
     }
 } 
 @media only screen and (max-width: 767px) {
@@ -213,7 +225,7 @@
         padding: 0rem;
         font-weight: lighter;
     }
-    #footer nav{
+    .footer2{
         display: flex;
         justify-content: space-around;
     }
