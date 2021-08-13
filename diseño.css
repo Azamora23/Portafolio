@@ -23,8 +23,11 @@
     color: white;
     font-weight: bold;
 }
-
 .navbar-menu .navbar-item:hover{
+    color: white;
+    background-color: var(--color1);
+}
+.navbar-menu .navbar-item:focus, .navbar-menu .navbar-item:focus-within{
     color: white;
     background-color: var(--color1);
 }
@@ -32,13 +35,11 @@
 .hero{
     background-color: var(--color1);
     border-bottom-right-radius: 30%;
-  
 }
 .hero-body .title, .hero-body .subtitle{
     color: white;
     padding: 0rem;
 }
-
 /*dibujo*/
 #dibujo
 {
@@ -100,7 +101,7 @@
 .contenido p{
     position: absolute;
     text-align: center;
-    padding: 2rem;
+    padding: 0.5rem;
     color: var(--color5);
 }
 .imagen:hover{
@@ -161,16 +162,21 @@
     font-weight: bold;
 }
 /*estilo alert*/
-.swal2-icon.swal2-success{
-    color: var(--color1) !important;
-    border-color: var(--color1) !important;
+.icon{
+   margin: auto;
+ 
 }
+
 /*footer*/
 #footer{
     background-color: var(--color3);
     padding: 0.1rem;
     margin: 0rem;
 }
+.footer2{
+    display: flex;
+    justify-content: space-around;
+}    
 /*tamaño de pantalla*/
 @media only screen and (max-width: 1023px) {
     #navbarBasicExample{
