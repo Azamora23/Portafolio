@@ -48,7 +48,7 @@
             </div>
             <div class="column is-three-fifths" id="titulos">   
                 <div class="hero-body">
-                    <h1 class="title" id="nombre">
+                    <h1 class="title" id="autora">
                         Andrea Zamora Robayo
                     </h1>
                     <h2 class="subtitle" id="carrera">
@@ -154,7 +154,7 @@
             <div class="field">
               <label class="label">Nombre</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input" type="text" name="nombre"  id="nombre" placeholder="Ej: Andrea Zamora">
+                <input class="input" type="text" name="nombre"  id="nombre" placeholder="Ej: Andrea Zamora" required>
                   <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                   </span>
@@ -163,7 +163,7 @@
             <div class="field">
               <label class="label">Email</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" name="email" id="email" placeholder="Ej: azamora1111@gmail.com">
+                <input class="input" type="email" name="email" id="email" placeholder="Ej: azamora1111@gmail.com" required>
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -171,7 +171,7 @@
             </div>
             <div class="mensaje">
               <label class="label">Mensaje</label>
-              <textarea class="textarea" name="mensaje" id="mensaje" placeholder="Ej: Hola Andrea"></textarea>
+              <textarea class="textarea" name="mensaje" id="mensaje" placeholder="Ej: Hola Andrea"></textarea required>
             </div>
             <div class="field is-grouped is-grouped-right">
               <p class="control">
@@ -185,7 +185,7 @@
     </section>
     <!--footer-->
     <footer class="footer" id="footer">
-      <nav class="level">
+      <div class="footer2">
         <div class="level-item has-text-centered">
           <div>
             <a href="https://www.linkedin.com/in/andreazamora23/" target="_blanck">
@@ -213,13 +213,13 @@
             </a>
           </div>
         </div>
-      </nav>
+      </div>  
     </footer>
     <script src="interactivo.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script><!--iconos-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script><!--alertas-->
     <script src="alerta.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script><!--email-->
     <script type="text/javascript">
       (function() {
       emailjs.init("user_z4IMQ2g2Zbqxph2JBpkwJ");
