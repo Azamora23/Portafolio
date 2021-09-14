@@ -46,7 +46,7 @@
     padding: 1rem;
 }
 /*titulo segmentos*/
-#section .title, #habilidades .title, #contacto .title{
+#section .title, #habilidades .title, #contacto .title, #proyectos .title{
     padding: 0rem 3rem;
 }
 /*animación titulo y subtitulo*/
@@ -131,6 +131,17 @@
         transform: rotate(359deg);
     }
 }
+/*proyectos*/
+#proyectos .column{
+    padding: 1rem 1.5rem;
+}
+#proyectos .image{
+    border: 0.5rem solid white;
+}
+#proyectos a{
+    color: var(--color1);
+    font-weight: bold;
+}
 /*contacto*/
 #contacto .columns{
     background-color: white;
@@ -164,9 +175,7 @@
 /*estilo alert*/
 .icon{
    margin: auto;
- 
 }
-
 /*footer*/
 #footer{
     background-color: var(--color3);
