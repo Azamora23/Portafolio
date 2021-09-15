@@ -188,7 +188,14 @@
 .footer2{
     display: flex;
     justify-content: space-around;
-}    
+} 
+/*boton arriba*/  
+.arriba{
+    display: inline-flex;
+    position: fixed;
+    right: 3rem;
+    bottom: 0;
+} 
 /*tamaño de pantalla*/
 @media only screen and (max-width: 1023px) {
     #navbarBasicExample{
@@ -201,6 +208,11 @@
         }
     }
 } 
+@media only screen and (max-width: 950px){
+    .arriba{
+        display: none;
+    }
+}
 @media only screen and (max-width: 767px) {
     /*posicion del titulo*/
     #titulos, #titulos .hero-body{
@@ -237,13 +249,20 @@
         padding: 0rem;
         font-weight: lighter;
     }
+    #cadaProyecto{
+        display: flex;
+    }
     .footer2{
         display: flex;
         justify-content: space-around;
+        text-align: center;
     }
 }
 @media only screen and (max-width: 655px){
     #pasatiempos{
+        flex-direction: column;
+    }
+    #cadaProyecto{
         flex-direction: column;
     }
 } 
