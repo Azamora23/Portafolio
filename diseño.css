@@ -142,6 +142,9 @@
     color: var(--color1);
     font-weight: bold;
 }
+#proyectos a:hover{
+    background-color: var(--color3);
+}
 /*contacto*/
 #contacto .columns{
     background-color: white;
